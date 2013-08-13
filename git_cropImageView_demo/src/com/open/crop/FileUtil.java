@@ -456,7 +456,7 @@ public final class FileUtil
 			if (FileUtil.createFile(destPath))
 			{
 				FileOutputStream out = new FileOutputStream(destPath);
-				if (bitmap.compress(Bitmap.CompressFormat.JPEG,quality, out))
+				if (bitmap.compress(Bitmap.CompressFormat.PNG,quality, out))
 				{
 					out.flush();
 					out.close();

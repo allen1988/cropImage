@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  
+    tools:context=".CropImageUI" >
+    
+    <com.open.crop.CropBorder
+        android:id="@+id/cropImg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+    <Button 
+         android:id="@+id/save"
+         android:layout_width="match_parent"
+    	 android:layout_height="wrap_content"
+    	 android:layout_alignParentBottom="true"
+    	 android:text="@string/save"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_alignParentLeft="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Button" />
+    
+</RelativeLayout>
